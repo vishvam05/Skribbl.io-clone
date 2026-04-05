@@ -1,0 +1,24 @@
+{
+  "name": "skribbl",
+  "version": "1.0.0",
+  "description": "**Skribbl Clone**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "npm install --prefix client && npm install --prefix server && npm run build --prefix client",
+    "start" : "npm run start --prefix server"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishvam05/Skribbl.io-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/vishvam05/Skribbl.io-clone/issues"
+  },
+  "homepage": "https://github.com/vishvam05/Skribbl.io-clone#readme"
+}
