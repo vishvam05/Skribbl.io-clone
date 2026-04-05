@@ -7,6 +7,13 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../dist')))
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../dist', 'index.html'))
+  })
+}
+
 const server = http.createServer(app)
 const path = require('path')
 
@@ -541,12 +548,7 @@ io.on('connection', (socket) => {
 app.get('/', (req, res) => {
   res.json({ status: 'ok', rooms: Object.keys(rooms).length })
 })
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../dist')))
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../dist', 'index.html'))
-  })
-}
+
 
 const PORT = process.env.PORT || 3001
 
