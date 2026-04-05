@@ -1,12 +1,11 @@
 **Skribbl Clone**
 
-A simple multiplayer drawing and guessing game — basically a stripped-down skribbl.io clone. Players take turns drawing a word while everyone else tries to guess it in the chat. First to guess gets more points, and whoever has the most at the end wins.
-Built mostly as a learning project for Socket.IO and real-time stuff.
+A simple multiplayer drawing and guessing game basically a skribbl.io clone. Players take turns drawing a word while everyone else tries to guess it in the chat. First to guess gets more points, and whoever has the most at the end wins.
 
 **Tech Stack**
 
-Client — React + Vite
-Server — Node.js + Express + Socket.IO
+Client : React + Vite<br>
+Server : Node.js + Express + Socket.IO
 
 **To Start**
 
@@ -14,14 +13,14 @@ You need two terminals
 
 1. For the server.
 
-    cd server
-    npm install
+    cd server<br>
+    npm install<br>
     npm start
 
 2. For the client.
     
-    cd client
-    npm install
+    cd client<br>
+    npm install<br>
     npm run dev
 
 **How to Play**
