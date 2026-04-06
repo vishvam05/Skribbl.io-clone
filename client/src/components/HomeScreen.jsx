@@ -72,7 +72,7 @@ function HomeScreen({ onRoomCreated, onRoomJoined, setMyName }) {
   return (
     <div className="home-screen">
       <div className="home-card">
-        <h1 className="game-title">🎨 Skribbl Clone</h1>
+        <h1 className="game-title">Skribbl Clone</h1>
         <p className="subtitle">Draw and guess with friends</p>
 
         <input
